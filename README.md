@@ -3,6 +3,9 @@
 OSGI bundle allows to get RCE when you have access to Felix Console. There is pre-build bundle `rce.bundle.core-1.0-SNAPSHOT.jar`, works for AEM 6.2 or newer.
 
 ### Build by yourself
+
+Generate new skeleton as described below. Backport `BackdoorServlet` to newly genearted skeleton and build it with maven.
+
 For AEM 5.6 use following maven command.
 
 ```
@@ -68,3 +71,4 @@ Select archetype version from the table.
 
 ### Access the shell
 https://aem.webapp/bin/backdoor.html?cmd=ls
+
